@@ -3,35 +3,36 @@ using namespace std;
 int main()
 {
 	int n, a, b;
+	char ch;
 	cout<<"enter the two numbers:";
 	cin>>a>>b;
 	cout<<"enter the operator that you want to use :";
 	cout<<"1, +"<<endl<<"2,-"<<endl<<"3,*"<<endl<<"4,/"<<endl<<"5,%";
-	cin>>n;
-	switch(n)
+	cin>>ch;
+	switch(ch)
 	{
-		case 1: 
+		case '+': 
 		{
 			cout<<"addition of two numbers are :"<<a+b;
 		    break ;
 		}
 		
-		case 2:{
+		case '-':{
 			
 		cout<<"substraction of two numbers are:"<<a-b;
 		   break ;
 	}
-		case 3: {
+		case '*': {
 			
 		cout<<"multiplication of two numbers are"<<a*b;
 		   break ;
 	}
-		case 4: {
+		case '/': {
 			
 		cout<<"division of two numbers are"<<a/b;
 		   break;
 	}
-		case 5:{
+		case '%':{
 			
 		 cout<<"modulus of two numbers are"<<a%b;
 		   break;
